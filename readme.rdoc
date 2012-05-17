@@ -1,30 +1,21 @@
-bing_translate_yaml is a simple Ruby on Rails plugin for translating your YAML files using Bing.
-
+bing_translate_acts_as_translatable is a Ruby on Rails plugin for easy translation of your acts_as_translatable models.
 
 == Installation
 
 In your <em>Gemfile</em>:
 
-  gem 'bing_translate_yaml'
+  gem 'bing_translate_acts_as_translatable'
   
 Then run <code>bundle install</code>.
 
 == Example
 
-Make sure you have your translation files in e.g.:
-
-  config/locales/en.yml (English)
-  config/locales/de.yml (German)
-  config/locales/es.yml (Spanish)
+Make sure you have e.g. <code>acts_as_translatable_on :name, :description</code> in e.g. your Category model.
 
 Run:
 
-  $ rake translate from=en to=es
+  $ rake bing_translate_acts_as_translatable class=Category from=en to=es
   
-This will create (or update) the following file:
-
-  config/locales/es.yml
-
-Enjoy :-)
+This will create (or update) translataions for your models.
 
 Copyright (c) 2012 Lasse Bunk, released under the MIT license

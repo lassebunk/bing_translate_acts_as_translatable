@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
 
   s.author = "Lasse Bunk"
   s.email = "lassebunk@gmail.com"
-  s.description = "bing_translate_yaml is a simple Ruby on Rails plugin to translate your YAML files using Bing."
-  s.summary = "Simple Ruby on Rails plugin for translating your YAML files using Bing."
+  s.description = "bing_translate_acts_as_translatable is a Ruby on Rails plugin for easy translation of your acts_as_translatable models."
+  s.summary = "Ruby on Rails plugin for easy translation of your acts_as_translatable models."
   s.homepage = "http://github.com/lassebunk/bing_translate_acts_as_translatable"
   
   s.add_dependency 'acts_as_translatable'
